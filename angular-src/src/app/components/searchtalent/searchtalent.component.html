@@ -1,0 +1,47 @@
+<form (submit)="onSearchSubmit()">
+    <table cellspacing="0" cellpadding="3" width="100%" allign="center">
+    <tr>
+      <td class="hp sl">
+        <label for="skill" id="hpskill_label" aria-hidden="true">skill</label>
+      </td>
+      <td class="hp wl" colspan="2">
+        <label for="where" id="hpwhere_label" aria-hidden="true">where</label>
+      </td>
+    </tr>
+    <tr>
+      <td class="hp sit">
+        <span class="inwrap">
+          <input type="text"
+          [(ngModel)]="hpSkillInputBox"
+          maxlength="512" 
+          size="31" 
+          aria-labelledby="skill_label_top hidden_colon skill_label_bot" 
+          name="hpSkillInputBox"
+          autocomplete="off" 
+          id="hpskill_box">
+        </span>
+      </td>
+      <td class="hp wit">
+        <span class="inwrap">
+          <input type="text"
+          [(ngModel)]="hpWhereInputBox"
+          maxlength="64" 
+          size="31" 
+          aria-labelledby="where_label_top hidden_colon where_label_bot" 
+          name="hpWhereInputBox"
+          autocomplete="off" 
+          id="hpwhere_box">
+        </span>
+      </td>
+      <td class="hpinput_submit" style=width:1px>
+        <span class="inwrapBorder style=width:auto;">
+          <input id="hpfind_talent" type="submit" class="input_submit" value="Find Talents">
+        </span>
+      </td>
+    </tr>
+  </table>
+</form>
+
+<form>
+
+</form>

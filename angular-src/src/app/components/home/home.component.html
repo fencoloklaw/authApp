@@ -1,0 +1,76 @@
+<div class="jumbotron text-center">
+  <!--<h1> Authentication App </h1>
+  <p class="lead"> Welcome to Authentication application build</p>
+  <div>
+    <a class="btn btn-primary" [routerLink]="['/register']">Register</a> 
+    <a class="btn bth-default" [routerLink]="['/login']">Login</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h3>Express backend</h3>
+    <p> Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. </p>
+  </div>
+  <div class="col-md-4">
+    <h3>Angular CLI </h3>
+    <p> Angular applications are made up of components. A component is the combination of an HTML template and a component class that controls a portion of the screen. </p>
+  </div>
+  <div class="col-md-4">
+    <h3> JWT Tokens </h3>
+    <p> JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties. </p>
+  </div>
+</div>-->
+
+<table role="Search" width="700" border="0" cellspacing="0" cellpadding="0" align="center" style="margin-top:1em">
+<tbody>
+  <tr>
+    <h1> Freelancer </h1>
+  </tr>
+  <tr>
+    <form (submit)="onSearchSubmit()">
+    <table cellspacing="0" cellpadding="3" width="100%" allign="center">
+    <tr>
+      <td class="hp sl">
+        <label for="skill" id="hpskill_label" aria-hidden="true">skill</label>
+      </td>
+      <td class="hp wl" colspan="2">
+        <label for="where" id="hpwhere_label" aria-hidden="true">where</label>
+      </td>
+    </tr>
+    <tr>
+      <td class="hp sit">
+        <span class="inwrap">
+          <input type="text"
+          [(ngModel)]="hpSkillInputBox" 
+          maxlength="512" 
+          size="31" 
+          aria-labelledby="skill_label_top hidden_colon skill_label_bot" 
+          name="hpSkillInputBox"
+          autocomplete="off" 
+          id="hpskill_box">
+        </span>
+      </td>
+      <td class="hp wit">
+        <span class="inwrap">
+          <input type="text"
+          [(ngModel)]="hpWhereInputBox"
+          maxlength="64" 
+          size="31" 
+          aria-labelledby="where_label_top hidden_colon where_label_bot" 
+          name="hpWhereInputBox"
+          autocomplete="off" 
+          id="hpwhere_box">
+        </span>
+      </td>
+      <td class="hpinput_submit" style=width:1px>
+        <span class="inwrapBorder style=width:auto;">
+          <input id="hpfind_talent" type="submit" class="input_submit" value="Find Talents">
+        </span>
+      </td>
+    </tr>
+    </table>
+    </form>
+  </tr>
+</tbody>
+</table>
